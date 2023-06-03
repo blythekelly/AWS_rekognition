@@ -1,0 +1,39 @@
+<!--
+Name: Blythe Kelly
+Assignment: Project 2
+Class: CS 178
+Professor: Dr. Urness
+Due: May 10, 2023
+-->
+
+<html>
+  <title>CS178 Project Webpage</title>
+<head>
+<style>
+body {font-family: Arial}
+
+
+input[type=submit], input[type=file] {
+  background-color: #5dbea3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+<html>
+<body>
+<center>
+<h2>Click on the "Choose File" button to upload an image:</h2>
+<p1>After you have uploaded an image, push submit to see what has been detected in your image.</p1><br><br>
+
+<form action="/upload" method = "POST" enctype = "multipart/form-data">
+    <input type = "file" name = "file" accept=".png,.jpg,.jpeg"/><br>
+    <input type = "submit" /><br>
+</center>
+</body>
+</html>
